@@ -1,72 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mobile Auto Detailing Guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore mobile car detailing packages and request an appointment with Watkins Bros Detailing.">
+  <title>Watkins Bros Detailing | Mobile Auto Detailing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="booking.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-        <h1>Mobile Auto Detailing Guide</h1>
-        <p>Professional mobile detailing that comes to you.</p>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#results">Before &amp; After</a></li>
-        <li><a href="#process">Detailing Process</a></li>
-        <li><a href="#tips">Care Tips</a></li>
-      </ul>
-    </nav> 
-
-    <main>
-     
-    <section id="services">
-        <h2>Our Detailing Services</h2>
-        <p>Watkins Bros Detailing provides fully mobile auto detailing throughout the DMV area. We come to you and help restore your vehicle's clean, polished, showroom appearance.</p>
-        
-    <div class="card-row">
-        <div class="card">
-            <h3>Interior Detail</h3>
-            <p>Includes vacuuming, carpet and floor mat cleaning, dashboard and console wipe down, interior windows, leather conditioning, steam cleaning, odor treatment, and more.</p>
-            <p><strong>Car: $130 | SUV / Van / Truck: $160</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Exterior Detail</h3>
-            <p>Includes foam pre-rinse, hand wash, wheel and tire cleaning, bug and road grime removal, tire shine, exterior windows, spray wax protection, and paint sealant.</p>
-            <p><strong>Car: $130 | SUV / Van / Truck: $160</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Full Detail Package</h3>
-            <p>Our full detail combines interior and exterior detailing with deeper cleaning services for customers who want a complete vehicle refresh.</p>
-            <p><strong>Car: $160 | SUV / Van / Truck: $230</strong></p>
-        </div>
-    </div>
-        
+  <header class="top">
+    <a class="brand" href="#home">Watkins Bros <span>Detailing</span></a>
+    <a class="button compact" href="#book">Book a Detail</a>
+  </header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Mobile detailing · DMV area</p>
+        <h1 id="hero-title">A fresh detail.<br>Right in your driveway.</h1>
+        <p>Interior, exterior, and full-service auto detailing that comes to you.</p>
+        <nav aria-label="Main menu">
+          <a class="button" href="#book">Book a Detail</a>
+          <a class="button secondary" href="#services">See Services</a>
+          <a class="button secondary" href="#results">Before &amp; After</a>
+        </nav>
+      </div>
     </section>
-
-    <section id="results" aria-labelledby="results-title">
-        <h2 id="results-title">Before &amp; After Detailing Results</h2>
-        <figure>
-            <a href="images/before-after.png" aria-label="Open the full-size before-and-after interior detail photo">
-                <img
-                    src="images/before-after.png"
-                    alt="Vehicle interior before and after detailing, showing dirt and debris removed"
-                    loading="lazy"
-                    decoding="async">
-            </a>
-            <figcaption class="image-caption">
-                Interior detail. Select the photo to see it at full size.
-            </figcaption>
-        </figure>
-    </section>
-    
+    <div class="content">
+      <section id="services">
+        <p class="eyebrow">Packages &amp; pricing</p>
+        <h2>Choose your detail</h2>
+        <div class="service-list">
+          <article class="service">
+            <div>
+              <h3>Interior Detail</h3>
+              <p>Vacuuming, carpet and mat cleaning, steam cleaning, and interior surfaces.</p>
+            </div>
+            <dl class="prices"><div><dt>Car</dt><dd>$130</dd></div><div><dt>SUV / Van / Truck</dt><dd>$160</dd></div></dl>
+            <a class="button compact" href="#book" data-package="0">Choose <span class="sr-only">Interior Detail</span></a>
+          </article>
+          <article class="service">
+            <div>
+              <h3>Exterior Detail</h3>
+              <p>Hand wash, wheel and tire cleaning, exterior glass, and paint protection.</p>
+            </div>
+            <dl class="prices"><div><dt>Car</dt><dd>$130</dd></div><div><dt>SUV / Van / Truck</dt><dd>$160</dd></div></dl>
+            <a class="button compact" href="#book" data-package="1">Choose <span class="sr-only">Exterior Detail</span></a>
+          </article>
+          <article class="service">
+            <div>
+              <h3>Full Detail Package</h3>
+              <p>Interior and exterior detailing in one appointment.</p>
+            </div>
+            <dl class="prices"><div><dt>Car</dt><dd>$160</dd></div><div><dt>SUV / Van / Truck</dt><dd>$230</dd></div></dl>
+            <a class="button compact" href="#book" data-package="2">Choose <span class="sr-only">Full Detail Package</span></a>
+          </article>
+        </div>
+      </section>
+      <section id="results">
+        <p class="eyebrow">The difference a detail makes</p>
+        <h2>Before &amp; After</h2>
+        <div class="gallery">
+          <figure>
+            <a href="images/before-after.png"><img src="images/before-after.png" loading="lazy" alt="Side-by-side comparison of a rear seat and floor before and after interior detailing"></a>
+            <figcaption>Interior detail · Rear seats and floor</figcaption>
+          </figure>
+          <figure>
+            <a href="images/carpet-comparison.jpg"><img src="images/carpet-comparison.jpg" loading="lazy" alt="Dirty passenger footwell on the left and clean carpet and floor mat on the right"></a>
+            <div class="comparison-labels" aria-hidden="true"><span>Before</span><span>After</span></div>
+            <figcaption>Carpet and floor mat · AI-generated example</figcaption>
+          </figure>
+          <figure>
+            <a href="images/wheel-comparison.jpg"><img src="images/wheel-comparison.jpg" loading="lazy" alt="Alloy wheel covered in brake dust on the left and the clean wheel on the right"></a>
+            <div class="comparison-labels" aria-hidden="true"><span>Before</span><span>After</span></div>
+            <figcaption>Wheel and tire · AI-generated example</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="book">
+        <p class="eyebrow">Mobile appointments</p>
+        <h2>Request a booking</h2>
+        <p>Choose your service and preferred date. We’ll confirm availability by text.</p>
+        <form id="booking" hidden>
+          <div class="fields">
+            <label>Service<select name="service" required><option value="">Choose a service</option><option value="0" data-car="130" data-large="160">Interior Detail</option><option value="1" data-car="130" data-large="160">Exterior Detail</option><option value="2" data-car="160" data-large="230">Full Detail Package</option></select></label>
+            <label>Vehicle type<select name="vehicle" required><option value="">Choose a vehicle type</option><option value="car">Car</option><option value="large">SUV / Van / Truck</option></select></label>
+            <label>Preferred date<input type="date" name="date" required></label>
+            <label>Service ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" required></label>
+            <label>Your name<input name="customer" autocomplete="name" maxlength="80" required></label>
+            <label>Preferred time<select name="time"><option>Any time</option><option>Morning</option><option>Afternoon</option></select></label>
+          </div>
+          <p id="estimate" aria-live="polite"></p>
+          <button class="button" type="submit">Open Text Message</button>
+          <p class="note">Send the prefilled request from your messaging app. You can also call <a href="tel:+12403020159">240-302-0159</a>.</p>
+          <div id="message-fallback" hidden><label>Copy your request if your messaging app doesn’t open<textarea id="request-text" rows="5" readonly></textarea></label></div>
+        </form>
+        <noscript><p><a href="sms:+12403020159">Text Watkins Bros to request a booking</a> or call <a href="tel:+12403020159">240-302-0159</a>.</p></noscript>
+      </section>
     <section id="process">
         <h2>How Our Mobile Detailing Works</h2>
         <p>Booking is simple. Choose the detailing service that fits your vehicle, schedule an appointment, and we bring the detail shop directly to you.</p>
@@ -97,13 +127,12 @@
            </a>.
         </p>
     </section>
-
-    </main>
-
-    <footer>
-          <p>&copy; 2026 Watkins Bros Detailing. All rights reserved.</p>
-          <p>Mobile Detailing • DMV Area • 240-302-0159</p>
-    </footer>
-
+    </div>
+  </main>
+  <footer>
+    <strong>Watkins Bros Detailing</strong>
+    <a href="tel:+12403020159">240-302-0159</a>
+    <a href="https://www.instagram.com/watkins_bro_detailing/">Instagram</a>
+  </footer>
 </body>
 </html>
